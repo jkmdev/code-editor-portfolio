@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@charset 'utf-8';
+
+//**********COLOURS**********
+
+//blue
+
+$uranus: #1fd5ea;
+$neptune: #2fa3f1;
+$midnight: #282c34;
+$evening: #3c404b;
+$void: #1a1d24;
+$black-hole: #1a1d24;
+
+//red
+
+$bloodmoon: #d4554f;
+$sun: #fa8e21; 
+$sunflower: #ffbf00;
+$bubblegum: #f1447a;
+
+//green
+
+$mint: #01ca96;
+
+//grey
+
+$moon: #90929e;
+$bright: #ffffff;
+
+//**********FONTS**********
+
+//**********SPACING**********
+
+
+//**********GLOBAL STYLES***********
+
+body {
+    background-color: $midnight;
+}
