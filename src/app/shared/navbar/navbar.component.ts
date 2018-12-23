@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  developerName = "Julia McGeoghan";
+  developerTitle = "Full Stack Developer";
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onContactButtonClick() {
   }
 
 }

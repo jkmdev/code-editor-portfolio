@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { NavbarComponent } from './navbar.component';
 
@@ -27,21 +28,21 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h2').textContent).toContain('Julia McGeoghan');
-    expect(compiled.querySelector('h3').textContent).toContain('Full Stack Developer');
+    expect(compiled.querySelector('h4').textContent).toContain('Full Stack Developer');
   });
 
-  it('should generate contact form when contact button is clicked', () => {
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
+  it('should trigger click event when contact button is clicked', () => {
 
-    spyOn(compiled, 'onContactButtonClick');
+    spyOn(component, 'onContactButtonClick');
 
-    let button = fixture.debugElement.nativeElement.querySelector('contact');
-    button.click();
+    let button = fixture.debugElement.query(By.css('.contact'));
+
+    button.triggerEventHandler('click', null);
   
     fixture.whenStable().then(() => {
-      expect(compiled.onContactButtonClick).toHaveBeenCalled();
+      expect(component.onContactButtonClick).toHaveBeenCalled();
     });
+
   });
 
 });

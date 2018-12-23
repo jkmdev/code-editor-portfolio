@@ -15,6 +15,7 @@ $black-hole: #1a1d24;
 //red
 
 $bloodmoon: #d4554f;
+$blood: #5c1a16;
 $sun: #fa8e21; 
 $sunflower: #ffbf00;
 $bubblegum: #f1447a;
@@ -40,6 +41,9 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
     font-weight: normal;
     padding: 3px;
     margin: 0px;
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
 }
 
 //**********GLOBAL STYLES***********

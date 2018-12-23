@@ -4,8 +4,8 @@
 
     background-color: $black-hole;
     display: flex;
+    justify-content: space-between;
     padding: 15px;
-    width: 100%;
 
     @media only screen and (max-width: 600px) {
         flex-direction: column;
@@ -39,14 +39,15 @@
 
     .contact {
 
+        flex-basis: fit-content;
         background-color: $bloodmoon;
         color: $bright;
         border-radius: 100px;
-        border: none;
         font-size: 14px;
         font-weight: bold;
         height: 40px;
         padding: 0px 15px 0px 15px;
+        @extend %clean;
 
         @media only screen and (max-width: 600px) {
             margin: 0px;
