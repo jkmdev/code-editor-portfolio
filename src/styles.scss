@@ -62,15 +62,17 @@ h1 {
 
 h2 {
     @extend %clean;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h3 {
     @extend %clean;
+    
 }
 
 h4 {
     @extend %clean;
+    font-size: 13px;
 }
 
 h5 {

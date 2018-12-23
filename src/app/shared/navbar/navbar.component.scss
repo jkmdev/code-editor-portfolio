@@ -47,6 +47,7 @@
         font-weight: bold;
         height: 40px;
         padding: 0px 15px 0px 15px;
+        margin-right: 80px;
         @extend %clean;
 
         @media only screen and (max-width: 600px) {
