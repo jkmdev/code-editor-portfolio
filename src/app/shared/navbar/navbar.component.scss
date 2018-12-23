@@ -1,0 +1,60 @@
+@import '../../../styles';
+
+.nav {
+
+    background-color: $black-hole;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 601px) {
+        align-items: center;
+    }
+
+    .logo {
+
+        flex: 1;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
+    }
+
+    .title {
+
+        flex: 3;
+
+        @media only screen and (max-width: 600px) {
+            margin: 0px;
+            text-align: center;
+            padding: 5px;
+        }
+
+    }
+
+    .contact {
+
+        background-color: $bloodmoon;
+        color: $bright;
+        border-radius: 100px;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+
+        @media only screen and (max-width: 600px) {
+            margin: 0px;
+            text-align: center;
+            padding: 5px;
+            height: 30px;
+        }
+
+    }
+
+}
