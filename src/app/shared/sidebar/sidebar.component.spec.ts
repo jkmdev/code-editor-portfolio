@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { SidebarComponent } from './sidebar.component';
 
@@ -19,12 +20,29 @@ describe('SidebarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create sidebar component', () => {
     expect(component).toBeTruthy();
   });
 
   it('should display all anchor links', () => {
-    expect(component).toBeTruthy();
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.title').textContent).toContain("Julia's Portfolio");
+
+  });    
+
+  it('should trigger function when link is clicked', () => {
+    
+    spyOn(component, 'onOptionClick');
+
+    let li = fixture.debugElement.query(By.css('.option'));
+
+    li.triggerEventHandler('click', null);
+  
+    fixture.whenStable().then(() => {
+      expect(component.onOptionClick).toHaveBeenCalled();
+    });
+
   });
 
 });

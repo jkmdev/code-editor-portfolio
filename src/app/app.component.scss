@@ -1,0 +1,28 @@
+@import '../styles';
+
+.app {
+
+    display: flex;
+
+    .sidebar {
+        flex: 1;
+        background-color: $void;
+        overflow-x: hidden;
+        
+        @media only screen and (max-width: 1150px) {
+            display: none;
+        }
+
+    }
+
+    .number-scroll {
+        @media only screen and (max-width: 1150px) {
+            display: none;
+        }
+    }
+
+    .content {
+        flex: 4.8;
+    }
+
+}

@@ -1,0 +1,28 @@
+@import '../../../styles';
+
+.sidebar {
+
+    height: 100%;
+    position: fixed;
+    padding: 15px 0px 0px 15px;
+
+    ul {
+        @extend %clean;
+    }
+
+    li {
+        padding-left: 38px;
+        padding-top: 5px;
+
+        &:hover {
+            color: $uranus;
+        }
+
+    }
+
+    .fas, .far {
+        padding-right: 10px;
+    }
+
+
+}
