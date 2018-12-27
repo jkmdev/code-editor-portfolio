@@ -21,6 +21,12 @@
         }
     }
 
+    .line-numbers {
+        @media only screen and (max-width: 1150px) {
+            display: none;
+        }
+    }
+
     .content {
         flex: 4.8;
     }
