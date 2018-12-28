@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.about {
+
+    @extend %gap;
+    @extend %center-h;
+    color: $bright;
+
+
+    a:active {
+        @extend %clean;
+        color: $bright;
+    }
+
+    a:visited {
+        @extend %clean;
+        color: $bright;
+    }
+
+    .title {
+        padding-bottom: 20px;
+    }
+
+    .fab {
+        font-size: 35px;
+        padding: 10px 10px 20px 10px;
+
+        &:hover {
+            color: $uranus;
+        }
+
+    }
+}

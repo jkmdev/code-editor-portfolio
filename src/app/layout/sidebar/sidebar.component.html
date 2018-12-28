@@ -2,12 +2,20 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 <div class="sidebar">
-  <div class="title">
-    <i class="fas fa-caret-down"></i>
-    <i class="fas fa-folder-open"></i>
-    {{folderTitle}}
+  <div (click)="onTitleClick()" class="title">
+    <ul *ngIf="showOptions">
+      <i class="fas fa-caret-down"></i>
+      <i class="fas fa-folder-open"></i>
+      {{folderTitle}}
+    </ul>
+    <ul *ngIf="!showOptions">
+      <i class="fas fa-caret-right"></i>
+      <i class="fas fa-folder"></i>
+      {{folderTitle}}
+    </ul>
+    
   </div>
-  <ul>
+  <ul *ngIf="showOptions">
     <li class="option" (click)="onOptionClick()" *ngFor="let option of options">
       <i class="far fa-file"></i>
       {{option}}

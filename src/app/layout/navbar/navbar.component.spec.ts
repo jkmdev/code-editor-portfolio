@@ -27,22 +27,17 @@ describe('NavbarComponent', () => {
   it('should render title and subtitle in navbar', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('Julia McGeoghan');
-    expect(compiled.querySelector('h4').textContent).toContain('Full Stack Developer');
+    expect(compiled.querySelector('h2').textContent).toContain(component.developerName);
+    expect(compiled.querySelector('h3').textContent).toContain(component.developerTitle);
   });
 
   it('should trigger click event when contact button is clicked', () => {
-
     spyOn(component, 'onContactButtonClick');
-
     let button = fixture.debugElement.query(By.css('.contact'));
-
     button.triggerEventHandler('click', null);
-  
     fixture.whenStable().then(() => {
       expect(component.onContactButtonClick).toHaveBeenCalled();
     });
-
   });
 
 });

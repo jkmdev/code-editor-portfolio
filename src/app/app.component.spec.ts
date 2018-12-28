@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
+import { AboutComponent } from './about/about.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
         AppComponent,
         NavbarComponent,
         SidebarComponent,
-        LineNumbersComponent
+        LineNumbersComponent,
+        AboutComponent
       ],
     }).compileComponents();
   }));

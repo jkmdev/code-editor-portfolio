@@ -10,6 +10,7 @@ export class SidebarComponent implements OnInit  {
 
   folderTitle = "Julia's Portfolio";
   options = ['About', 'Skills', 'Projects', 'Open Source', 'Blog', 'Codepen'];
+  showOptions = true;
 
   constructor() {
   }
@@ -18,6 +19,10 @@ export class SidebarComponent implements OnInit  {
   }
 
   onOptionClick() {
+  }
+
+  onTitleClick() {
+    this.showOptions = !this.showOptions;
   }
 
 }

@@ -28,21 +28,20 @@ describe('SidebarComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.title').textContent).toContain("Julia's Portfolio");
-
   });    
 
-  it('should trigger function when link is clicked', () => {
-    
+  it('should trigger function when link is clicked', () => {   
     spyOn(component, 'onOptionClick');
-
     let li = fixture.debugElement.query(By.css('.option'));
-
     li.triggerEventHandler('click', null);
-  
     fixture.whenStable().then(() => {
       expect(component.onOptionClick).toHaveBeenCalled();
     });
+  });
 
+  it('should show/hide content when title is clicked', () => {
+    component.onTitleClick();
+    expect(component.showOptions).toBe(false);
   });
 
 });

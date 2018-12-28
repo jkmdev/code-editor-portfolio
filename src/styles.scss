@@ -35,7 +35,7 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
 
 //**********SPACING**********
 
-//*********BASE**********
+//*********COMMON**********
 
 %clean {
     font-weight: normal;
@@ -48,7 +48,19 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
     -moz-outline-style: none;
 }
 
-//**********GLOBAL STYLES***********
+%center-h {
+    text-align: center;
+}
+
+%gap {
+    margin-top: 300px;
+}
+
+%font-padding {
+    padding-bottom: 10px;
+}
+
+//**********BASE***********
 
 body {
     background-color: $midnight;
@@ -60,27 +72,34 @@ body {
 
 h1 {
     @extend %clean;
+    @extend %font-padding;
 }
 
 h2 {
     @extend %clean;
+    @extend %font-padding;
     font-size: 20px;
 }
 
 h3 {
     @extend %clean;
-    
+    @extend %font-padding;
+    font-size: 16px;
 }
 
 h4 {
     @extend %clean;
-    font-size: 13px;
+    @extend %font-padding;
+    font-size: 14px;
 }
 
 h5 {
     @extend %clean;
+    @extend %font-padding;
 }
 
 h6 {
     @extend %clean;
+    @extend %font-padding;
 }
+
