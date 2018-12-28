@@ -1,4 +1,6 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { fromEvent } from "rxjs";
+import { map, throttleTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navbar',
@@ -9,14 +11,28 @@ export class NavbarComponent implements AfterViewInit {
 
   developerName = "Julia McGeoghan";
   developerTitle = "Full Stack Developer";
-
-  constructor() { }
-
-  ngAfterViewInit() {
-    //const scroll$ = Rx.Observable.fromEvent(window, 'scroll');
+  stickyNavbar = false;
+  
+  constructor() {
   }
 
+  @HostListener("window:scroll", ['$event'])
+  onWindowScroll(e) {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 100) {
+      this.stickyNavbar = true;
+    } else {
+      this.stickyNavbar = false;
+    }
+  }
+
+  ngAfterViewInit() {}
+
   onContactButtonClick() {
+  }
+
+  test() {
+    return this.stickyNavbar;
   }
 
 }
