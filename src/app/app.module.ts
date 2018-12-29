@@ -7,6 +7,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { AboutComponent } from './about/about.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LineNumbersComponent } from './layout/line-numbers/line-numbers.compone
     NavbarComponent,
     SidebarComponent,
     AboutComponent,
-    LineNumbersComponent
+    LineNumbersComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

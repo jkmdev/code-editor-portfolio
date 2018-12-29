@@ -1,6 +1,12 @@
 @import '../../../styles';
 
 .line-numbers {
-    padding: 3px;
-    color: $evening;
+
+    margin-top: 90px;
+
+    .number {
+        padding: 3px;
+        color: $evening;
+    }
+
 }

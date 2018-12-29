@@ -16,6 +16,7 @@
     }
 
     .number-scroll {
+        
         @media only screen and (max-width: 1150px) {
             display: none;
         }
@@ -29,8 +30,31 @@
 
     .content {
         flex: 4.8;
+        flex-direction: column;
         display: flex;
-        justify-content: center;
     }
+
+    .section {
+        @extend %gap;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title {
+        padding-bottom: 40px;
+        color: $bright;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1500px) {
+            flex-direction: column;
+        }
+    
+    }
+    
 
 }

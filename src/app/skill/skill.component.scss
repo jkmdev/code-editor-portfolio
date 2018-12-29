@@ -1,0 +1,27 @@
+@import '../../styles';
+
+
+.skill {
+
+    @extend %shadow;
+    margin-right: 20px;
+
+    @media only screen and (max-width: 1500px) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        background-color: $uranus;
+        color: $bright;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    .description {
+        background-color: $black-hole;
+        color: $bright;
+        padding: 20px;
+    }
+
+}

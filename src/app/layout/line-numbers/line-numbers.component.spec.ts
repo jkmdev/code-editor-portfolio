@@ -26,7 +26,7 @@ describe('LineNumbersComponent', () => {
 
   it('should line numbers to a specified height', () => {
     fixture.detectChanges();
-    var debugTaskTitle = fixture.debugElement.queryAll(By.css('.line-numbers'));
+    var debugTaskTitle = fixture.debugElement.queryAll(By.css('.number'));
     expect(debugTaskTitle.length).toEqual(component.lineHeight + 1);
   });
 

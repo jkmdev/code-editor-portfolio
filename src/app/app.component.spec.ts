@@ -5,6 +5,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
 import { AboutComponent } from './about/about.component';
+import { SkillComponent } from './skill/skill.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -17,7 +18,8 @@ describe('AppComponent', () => {
         NavbarComponent,
         SidebarComponent,
         LineNumbersComponent,
-        AboutComponent
+        AboutComponent,
+        SkillComponent
       ],
     }).compileComponents();
   }));
