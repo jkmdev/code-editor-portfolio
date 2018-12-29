@@ -1,27 +1,33 @@
 
-<div (scroll)="onWindowScroll($event)">
+<div class="app" (scroll)="onWindowScroll($event)">
+
     <app-navbar class="nav"></app-navbar>
 
-    <div class="app">
+    <div class="page">
         <app-sidebar class="sidebar"></app-sidebar>
         <app-line-numbers class="line-numbers"></app-line-numbers>
 
         <div class="content">
+
             <div class="section">
                 <h1 class="title">
                     Skills & Tools
-                </h1>
+                </h1> 
                 <div class="skills">
-                    <app-skill></app-skill>
-                    <app-skill></app-skill>
-                    <app-skill></app-skill>
+                    <app-skill [title]="title" [description]="description"></app-skill>
+                    <app-skill [title]="title" [description]="description"></app-skill>
+                    <app-skill [title]="title" [description]="description"></app-skill>
                 </div>
             </div>
+
             <div class="section">
                 <app-about></app-about>
             </div>
+
         </div>
 
         <router-outlet></router-outlet>
+        
     </div>
+
 </div>

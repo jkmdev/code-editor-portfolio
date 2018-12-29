@@ -18,7 +18,6 @@ export class NavbarComponent implements AfterViewInit {
 
   @HostListener("window:scroll", ['$event'])
   onWindowScroll(e) {
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 100) {
       this.stickyNavbar = true;
     } else {

@@ -5,6 +5,7 @@
 
     @extend %shadow;
     margin-right: 20px;
+    min-width: 300px;
 
     @media only screen and (max-width: 1500px) {
         margin-right: 0px;
@@ -16,6 +17,10 @@
         color: $bright;
         font-weight: bold;
         padding: 20px;
+
+        h3 {
+            font-weight: bold;
+        }
     }
 
     .description {

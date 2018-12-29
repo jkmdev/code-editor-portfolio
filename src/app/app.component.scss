@@ -1,60 +1,76 @@
 @import '../styles';
 
+
 .app {
 
     display: flex;
+    flex-direction: column;
 
-    .sidebar {
-        flex: 1;
-        background-color: $void;
-        overflow-x: hidden;
-        
-        @media only screen and (max-width: 1150px) {
-            display: none;
-        }
-
+    .nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
-    .number-scroll {
-        
-        @media only screen and (max-width: 1150px) {
-            display: none;
-        }
-    }
+    .page {
 
-    .line-numbers {
-        @media only screen and (max-width: 1150px) {
-            display: none;
-        }
-    }
-
-    .content {
-        flex: 4.8;
-        flex-direction: column;
+        flex: 0 0 100%;
         display: flex;
-    }
 
-    .section {
-        @extend %gap;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+        .sidebar {
 
-    .title {
-        padding-bottom: 40px;
-        color: $bright;
-    }
+            flex: 1;
+            background-color: $void;
+            overflow-x: hidden;
+            
+            @media only screen and (max-width: 1150px) {
+                display: none;
+            }
 
-    .skills {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        }
 
-        @media only screen and (max-width: 1500px) {
+        .number-scroll {
+            
+            @media only screen and (max-width: 1150px) {
+                display: none;
+            }
+        }
+
+        .line-numbers {
+            @media only screen and (max-width: 1150px) {
+                display: none;
+            }
+        }
+
+        .content {
+            flex: 4.8;
             flex-direction: column;
+            display: flex;
         }
-    
+
+        .section {
+            @extend %gap;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .title {
+            padding-bottom: 40px;
+            color: $bright;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 1500px) {
+                flex-direction: column;
+            }
+        
+        }
+        
+
     }
-    
 
 }
