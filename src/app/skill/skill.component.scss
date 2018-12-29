@@ -21,12 +21,30 @@
         h3 {
             font-weight: bold;
         }
+
+
     }
 
     .description {
         background-color: $black-hole;
         color: $bright;
         padding: 20px;
+        
     }
+
+    // &:hover {
+    //     @extend %light;
+    //     background-color: $uranus;
+    //     color: black;
+
+    //     .title {
+    //         color: black;
+    //     }
+
+    //     .description {
+    //         background-color: $uranus;
+    //         color: black;
+    //     }
+    // }
 
 }

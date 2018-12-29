@@ -1,0 +1,49 @@
+@import '../../styles';
+
+.tools {
+
+    color: $bright;
+    margin-top: 30px;
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .tool-tiles {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        .tile {
+            
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+
+            i {
+                @extend %shadow;
+                background-color: $black-hole;
+                font-size: 70px;
+                padding: 10px;
+
+                &:hover {
+                    @extend %light;
+                    background-color: $uranus;
+                    color: black;
+                }
+
+            }
+
+        }
+    
+        @media only screen and (max-width: 1500px) {
+            //flex-direction: column;
+        }
+    
+    }
+
+}

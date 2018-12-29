@@ -8,6 +8,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { AboutComponent } from './about/about.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
 import { SkillComponent } from './skill/skill.component';
+import { ToolsComponent } from './tools/tools.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkillComponent } from './skill/skill.component';
     SidebarComponent,
     AboutComponent,
     LineNumbersComponent,
-    SkillComponent
+    SkillComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,

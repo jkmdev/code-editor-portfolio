@@ -62,7 +62,12 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
 }
 
 %shadow {
-    box-shadow: 0px 0px 50px $shadow;
+    //box-shadow: 0px 0px 50px $shadow;
+    border: none;
+}
+
+%light {
+    box-shadow: 0px 0px 200px $uranus;
 }
 
 //**********BASE***********

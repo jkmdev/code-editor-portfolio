@@ -6,6 +6,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
 import { AboutComponent } from './about/about.component';
 import { SkillComponent } from './skill/skill.component';
+import { ToolsComponent } from './tools/tools.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -19,7 +20,8 @@ describe('AppComponent', () => {
         SidebarComponent,
         LineNumbersComponent,
         AboutComponent,
-        SkillComponent
+        SkillComponent,
+        ToolsComponent
       ],
     }).compileComponents();
   }));
