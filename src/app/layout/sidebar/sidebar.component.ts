@@ -12,12 +12,11 @@ export class SidebarComponent {
 
   options = [
     {'section':'About', 'startPos':0, 'anchorPos':0, 'endPos':489}, 
-    {'section':'Skills', 'startPos':490, 'anchorPos': 880, 'endPos': 1749},
+    {'section':'Skills & Tools', 'startPos':490, 'anchorPos': 880, 'endPos': 1749},
     {'section':'Projects', 'startPos':1750, 'anchorPos': 2000, 'endPos':2001}
   ];
 
   showOptions = true;
-
 
   //this is kept here so that the style of each option will
   //continously update on every scroll event
@@ -31,7 +30,6 @@ export class SidebarComponent {
   onTitleClick() {
     this.showOptions = !this.showOptions;
   }
-
 
   isActive(startPos, endPos){
     if(window.pageYOffset >= startPos && window.pageYOffset < endPos){

@@ -31,11 +31,11 @@ describe('SidebarComponent', () => {
   });    
 
   it('should trigger function when link is clicked', () => {   
-    spyOn(component, 'onOptionClick');
+    spyOn(component, 'goToPosition');
     let li = fixture.debugElement.query(By.css('.option'));
     li.triggerEventHandler('click', null);
     fixture.whenStable().then(() => {
-      expect(component.onOptionClick).toHaveBeenCalled();
+      expect(component.goToPosition).toHaveBeenCalled();
     });
   });
 

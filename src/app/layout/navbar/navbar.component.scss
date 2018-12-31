@@ -7,11 +7,6 @@
     justify-content: space-between;
     padding: 15px;
 
-    h2 {
-        padding-bottom: 5px;
-    }
-
-
     @media only screen and (max-width: 600px) {
         flex-direction: column;
     }
@@ -37,6 +32,10 @@
     .title {
 
         flex: 4.5;
+
+        h2 {
+            padding-bottom: 5px;
+        }
 
         @media only screen and (max-width: 600px) {
             margin: 0px;
