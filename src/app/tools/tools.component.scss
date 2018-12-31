@@ -24,10 +24,6 @@
             margin-left: 20px;
             margin-bottom: 40px;
 
-            &:hover {
-                //transform: scale(1.2);
-            }
-
             i {
                 @extend %shadow;
                 background-color: $black-hole;
@@ -35,7 +31,6 @@
                 padding: 10px;
 
                 &:hover {
-                    @extend %light;
                     background-color: $uranus;
                     color: black;
                 }
@@ -44,10 +39,6 @@
 
         }
 
-        @media only screen and (max-width: 1500px) {
-            //flex-direction: column;
-        }
-    
     }
 
 }

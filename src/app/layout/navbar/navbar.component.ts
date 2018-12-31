@@ -13,25 +13,9 @@ export class NavbarComponent implements AfterViewInit {
   developerTitle = "Full Stack Developer";
   stickyNavbar = false;
   
-  constructor() {
-  }
-
-  @HostListener("window:scroll", ['$event'])
-  onWindowScroll(e) {
-    if (window.pageYOffset > 100) {
-      this.stickyNavbar = true;
-    } else {
-      this.stickyNavbar = false;
-    }
-  }
-
   ngAfterViewInit() {}
 
   onContactButtonClick() {
-  }
-
-  test() {
-    return this.stickyNavbar;
   }
 
 }
