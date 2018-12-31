@@ -24,6 +24,10 @@
             margin-left: 20px;
             margin-bottom: 40px;
 
+            &:hover {
+                //transform: scale(1.2);
+            }
+
             i {
                 @extend %shadow;
                 background-color: $black-hole;
@@ -39,7 +43,7 @@
             }
 
         }
-    
+
         @media only screen and (max-width: 1500px) {
             //flex-direction: column;
         }

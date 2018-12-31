@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { LineNumbersComponent } from './layout/line-numbers/line-numbers.component';
 import { SkillComponent } from './skill/skill.component';
 import { ToolsComponent } from './tools/tools.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolsComponent } from './tools/tools.component';
     AboutComponent,
     LineNumbersComponent,
     SkillComponent,
-    ToolsComponent
+    ToolsComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

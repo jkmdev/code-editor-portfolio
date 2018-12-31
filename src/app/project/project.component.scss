@@ -1,0 +1,50 @@
+@import '../../styles';
+
+.project {
+
+    @extend %shadow;
+    margin-right: 40px;
+    color: $bright;
+    background-color: $black-hole;
+    min-width: 200px;
+
+
+    .about {
+        background-color: $mint;
+        padding: 20px;
+
+        a, a:hover, a:visited {
+            color: $bright;
+            text-decoration: none;
+        }
+
+        .title {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            padding-bottom: 5px;
+        }
+    }
+
+    .image-container {
+
+        display: flex;
+        justify-content: center;
+        
+        height: 300px;
+
+        .image {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    @media only screen and (max-width: 1150px) {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    
+}

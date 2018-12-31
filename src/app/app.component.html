@@ -8,23 +8,56 @@
         <app-line-numbers class="line-numbers"></app-line-numbers>
 
         <div class="content">
+    
+            <div class="section">
+                <app-about></app-about>
+            </div>        
 
             <div class="section">
+
                 <h1 class="title">
                     Skills & Tools
                 </h1> 
+
                 <div class="skills">
                     <app-skill [title]="title" [description]="description"></app-skill>
                     <app-skill [title]="title" [description]="description"></app-skill>
                     <app-skill [title]="title" [description]="description"></app-skill>
                 </div>
+
                 <div class="tools">
                     <app-tools></app-tools>
                 </div>
+
             </div>
 
             <div class="section">
-                <app-about></app-about>
+
+                <h1 class="title">
+                    Recent Projects
+                </h1> 
+
+                <div class="projects">
+                    <app-project 
+                        title="Hot Boards"
+                        githubLink="https://github.com/jkmdev"
+                        websiteLink="https://www.google.ca/"
+                        imageUrl="../assets/placeholder.jpg">
+                    </app-project>
+                    <app-project
+                        title="Medium 'API'"
+                        githubLink="https://github.com/jkmdev"
+                        websiteLink="https://www.google.ca/"
+                        imageUrl="../assets/placeholder.jpg">
+                    </app-project>
+                    <app-project
+                        title="Code Editor Portfolio"
+                        githubLink="https://github.com/jkmdev"
+                        websiteLink="https://www.google.ca/"
+                        imageUrl="../assets/placeholder.jpg">
+                    </app-project>
+                </div>
+
             </div>
 
         </div>

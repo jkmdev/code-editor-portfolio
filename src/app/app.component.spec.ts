@@ -7,6 +7,7 @@ import { LineNumbersComponent } from './layout/line-numbers/line-numbers.compone
 import { AboutComponent } from './about/about.component';
 import { SkillComponent } from './skill/skill.component';
 import { ToolsComponent } from './tools/tools.component';
+import { ProjectComponent } from './project/project.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -21,7 +22,8 @@ describe('AppComponent', () => {
         LineNumbersComponent,
         AboutComponent,
         SkillComponent,
-        ToolsComponent
+        ToolsComponent,
+        ProjectComponent
       ],
     }).compileComponents();
   }));

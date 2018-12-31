@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LineNumbersComponent implements OnInit {
 
-  lineHeight = 250;
-  lineNumbers:string[] = new Array(this.lineHeight);
+  lineHeight = 115;
+  lineNumbers : string[] = new Array(this.lineHeight);
 
   constructor() { 
 

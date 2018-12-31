@@ -12,8 +12,6 @@ export class SkillComponent implements OnInit {
 
   constructor() { 
 
-    console.log(this.title);
-
     if(!this.title) {
       this.title = "Undefined";
     }
