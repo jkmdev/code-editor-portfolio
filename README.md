@@ -1,3 +1,5 @@
+![alt text](https://i.imgur.com/C4vT7aW.png "Logo Title Text 1")
+
 # Code Editor Portfolio
 
 A developer's portfolio website disguised as, well, a code editor.
