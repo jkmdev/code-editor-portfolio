@@ -12,7 +12,7 @@ export class ProjectComponent implements OnInit {
   @Input() websiteLink: string;
   @Input() imageUrl: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

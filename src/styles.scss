@@ -55,6 +55,11 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
 
 %gap {
     margin-top: 450px;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 200px;
+    }
+
 }
 
 %font-padding {
@@ -76,6 +81,7 @@ $main-font: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial
         animation-name: example;
         animation-duration: 4s;
     }
+
 }
 
 /* Safari 4.0 - 8.0 */
